@@ -9,10 +9,10 @@ The following small example adds 1 to each element of a list of numbers by
 fanning the work over 4 Python worker processes:
 
 ```elixir
-Charmer.start_link(python_path: @python_path)
+Charmer.start_link(python_path: <path to Python code>)
 
 1..5
-|> Task.async_stream(&Charmer.call(@python_test_module, "inc", [&1]))
+|> Task.async_stream(&Charmer.call(<path to called Python module>, "inc", [&1]))
 |> Enum.map(fn {:ok, x} -> x end)
 
 Charmer.stop()
