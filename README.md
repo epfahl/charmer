@@ -1,5 +1,5 @@
-`Charmer` is a minimal, somewhat configurable library for creating and 
-interacting with a pool of Python processes in Elixir. While this package was used
+`Charmer` is a minimal, somewhat configurable Elixir library for creating and 
+interacting with a pool of Python. While this package was used
 in a production environment for well over a year, it has not been exercised
 beyond its initial specific use case.
 
