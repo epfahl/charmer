@@ -1,3 +1,5 @@
+_Concurrency in Python is hard. Use Elixir instead._
+
 `Charmer` is a minimal, somewhat configurable Elixir library for creating and 
 interacting with a pool of Python processes. While this package was used
 in a production environment for well over a year, it has not been exercised
