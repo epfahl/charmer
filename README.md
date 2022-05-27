@@ -11,7 +11,7 @@ The following small example adds 1 to each element of a list of numbers by
 fanning the work over 4 Python worker processes:
 
 ```elixir
-Charmer.start_link(python_path: <path to Python code>)
+Charmer.start_link(python_path: <path to Python code>, pool_size: 4)
 
 1..5
 |> Task.async_stream(&Charmer.call(<relative path to called Python module>, "inc", [&1]))
